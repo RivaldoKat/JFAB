@@ -4,16 +4,19 @@ public abstract class Human{
     public static final int LIFESPAN = 100;
     private String name;
     private int age;
-    private float height;
 
-    public Human(String name, int age){
+    private Gender gender;
+    protected float height;
+
+    public Human(String name, int age, Gender gender){
         this.name = name;
         this.age = age;
         this.height = height;
+        this.gender = gender;
     }
 
-    public Human(String name, int age, float height){
-        this(name, age);
+    public Human(String name, int age, float height, Gender gender){
+        this(name, age, gender);
         this.height = height;
     }
 
