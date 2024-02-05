@@ -1,10 +1,21 @@
 package com.apress.bgn.ch4.basic;
 
-class Human{
-    static final int LIFESPAN = 100;
+public abstract class Human{
+    public static final int LIFESPAN = 100;
     private String name;
     private int age;
     private float height;
+
+    public Human(String name, int age){
+        this.name = name;
+        this.age = age;
+        this.height = height;
+    }
+
+    public Human(String name, int age, float height){
+        this(name, age);
+        this.height = height;
+    }
 
     public String getName(){
         return name;
@@ -29,4 +40,6 @@ class Human{
     public void setHeight(float height){
         this.height = height;
     }
+
+    public abstract int getTimeToLive();
 }
