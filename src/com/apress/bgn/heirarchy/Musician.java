@@ -6,4 +6,5 @@ public interface Musician extends Artist{
     void setSongs(List<String> songs);
     String getGenre();
     void setGenre(String genre);
+    String toString();
 }

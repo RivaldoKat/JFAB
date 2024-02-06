@@ -4,6 +4,7 @@ package com.apress.bgn.heirarchy;
 import com.apress.bgn.ch4.basic.Gender;
 import com.apress.bgn.ch4.basic.Human;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Performer extends Human implements Musician, Actor {
@@ -16,6 +17,7 @@ public class Performer extends Human implements Musician, Actor {
     public Performer(String name, int age, float height, Gender gender){
         super(name, age, height, gender);
     }
+
 
     @Override
     public int getTimeToLive(){
@@ -39,6 +41,7 @@ public class Performer extends Human implements Musician, Actor {
     }
 
     public void addSong(String song){
+        this.songs = new ArrayList<>();
         this.songs.add(song);
     }
 
@@ -78,5 +81,13 @@ public class Performer extends Human implements Musician, Actor {
     @Override
     public void setSchool(String school) {
 
+    }
+
+    @Override
+    public String toString(){
+        return "Name: " + getName() +
+               "Age: " + getAge() +
+               "Height: " + getHeight() +
+               "Gender: " + Gender.MALE;
     }
 }
