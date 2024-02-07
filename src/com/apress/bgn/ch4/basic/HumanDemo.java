@@ -1,6 +1,6 @@
 package com.apress.bgn.ch4.basic;
 
-import com.apress.bgn.heirarchy.*;
+import com.apress.bgn.ch4.heirarchy.*;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package com.apress.bgn.heirarchy;
+package com.apress.bgn.ch4.heirarchy;
 import java.util.List;
 public interface Musician extends Artist{
 
